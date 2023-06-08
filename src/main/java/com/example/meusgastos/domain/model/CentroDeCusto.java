@@ -22,7 +22,7 @@
 
         @ManyToOne
         @JoinColumn(name = "idUsuario")
-        private Ususario usuario;
+        private Usuario usuario;
 
         @ManyToMany(mappedBy = "centrosDeCusto")
         @JsonBackReference
@@ -52,11 +52,11 @@
             this.observacao = observacao;
         }
 
-        public Ususario getUsuario() {
+        public Usuario getUsuario() {
             return usuario;
         }
 
-        public void setUsuario(Ususario usuario) {
+        public void setUsuario(Usuario usuario) {
             this.usuario = usuario;
         }
 
